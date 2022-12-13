@@ -1,0 +1,64 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.suo
+*.suo
+*.ncb
+*.user
+*.pdb
+*.idb
+*.res
+*.ilk
+*.dep
+*.bin
+*.7z
+
+# ResEditor files
+*.aps
+
+/Debug
+/Release
+stdout.txt
+log.txt
+*.suo
+*.suo
+G3DTest.suo
+G3DTest.suo
+stderr.txt
+desktop.ini
+*.db
+
+#Redist
+!Installer/Redist/*
+UpgradeLog.htm
+click_output.JPEG
+click_output.PNG

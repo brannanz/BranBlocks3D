@@ -1,0 +1,122 @@
+<html>
+<script>
+
+</script>
+<style>
+	img{
+		height: 100%;
+	}
+	.container
+	{
+		height: 47px;
+		width: 50px;
+		margin-right: 10px;	
+	}
+	.color
+	{
+		border-style: inset;
+		border-width: 2px;
+		width:16px;
+		height:16px;
+		font-size: 0;
+		
+		display:inline-block;
+		*display:inline; 
+		*zoom:1;
+	}
+	#currentcolor
+	{
+		width; 80%;
+		height: 80%;
+		border-style: inset;
+		border-width: 2px;
+	}
+	.colorPicker
+	{
+		width: 32px;
+		height: 32px;
+	}
+</style>
+<script>
+	var currentcolor = "white"; //This will be queried from the application later
+	function setColor(btn)
+	{
+		var color = btn.style.backgroundColor;
+		var clInt = parseInt(color.replace("#","0x"));
+		document.getElementById("currentcolor").style.backgroundColor = color;
+		window.external.SetColor(clInt);
+	}
+	
+	
+	
+	 function decimalColorToHTMLcolor(number) {
+		//Found at https://bytes.com/topic/javascript/insights/636088-function-convert-decimal-color-number-into-html-hex-color-string
+		var intnumber = number - 0;
+		var red, green, blue;
+		var template = "#000000";
+		red = (intnumber&0x0000ff) << 16;
+		green = intnumber&0x00ff00;
+		blue = (intnumber&0xff0000) >>> 16;
+		intnumber = red|green|blue;
+		var HTMLcolor = intnumber.toString(16);
+		HTMLcolor = template.substring(0,7 - HTMLcolor.length) + HTMLcolor;
+		return HTMLcolor;
+	} 
+	
+	function hex2decInt(hex)
+	{
+		return parseInt(hex, 16);
+	}
+
+	function queryColor()
+	{
+		var color = window.external.ChooseColor();
+		if(color != null)
+		{
+			color = decimalColorToHTMLcolor(color);
+			document.getElementById("currentcolor").style.backgroundColor = color;
+		}
+	}
+</script>
+<body style="background-color: ButtonFace; margin: 0; padding: 5px; overflow: hidden; border: outset 2px;">
+<table height="100%">
+	<tr>
+		<th>
+			<div class="color" onclick="setColor(this)" style="background-color: #000000"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #808080"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #800000"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #808000"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #008000"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #008080"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #000080"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #800080"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #808040"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #004040"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #0080FF"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #004080"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #8000FF"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #804000"></div><br>
+			<div class="color" onclick="setColor(this)" style="background-color: #FFFFFF"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #C0C0C0"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #FF0000"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #FFFF00"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #00FF00"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #00FFFF"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #0000FF"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #FF00FF"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #FFFF80"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #00FF80"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #80FFFF"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #8080FF"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #FF0080"></div>
+			<div class="color" onclick="setColor(this)" style="background-color: #FF8040"></div>
+		</th>
+		<td>
+			<button onclick="queryColor();" class='colorPicker'>
+				<div id='currentcolor' style="background-color:white;">
+			</button>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
