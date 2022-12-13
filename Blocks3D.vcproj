@@ -986,23 +986,15 @@
 			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 			>
 			<File
-				RelativePath=".\Blocks3D.exe.manifest"
+				RelativePath=".\Win32\Blocks3D.exe.manifest"
 				>
 			</File>
 			<File
-				RelativePath=".\Dialogs.rc"
-				>
-			</File>
-			<File
-				RelativePath=".\icon1.ico"
+				RelativePath=".\Win32\Dialogs.rc"
 				>
 			</File>
 			<File
 				RelativePath=".\Parts.bmp"
-				>
-			</File>
-			<File
-				RelativePath=".\roblox_RN1_icon.ico"
 				>
 			</File>
 		</Filter>
