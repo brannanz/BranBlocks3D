@@ -12,7 +12,7 @@ PartInstance::PartInstance(void)
 	PVInstance::PVInstance();
 	physBody = NULL;
     glList = glGenLists(1);
-	name = "Unnamed PVItem";
+	name = "Part";
 	className = "Part";
 	canCollide = true;
 	anchored = false;
