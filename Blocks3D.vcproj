@@ -256,7 +256,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\ax.cpp"
+				RelativePath=".\src\source\AX.cpp"
 				>
 			</File>
 			<File
@@ -292,7 +292,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\propertyGrid.cpp"
+				RelativePath=".\src\source\PropertyGrid.cpp"
 				>
 			</File>
 			<File
@@ -375,7 +375,7 @@
 				Name="DataModelV2"
 				>
 				<File
-					RelativePath=".\src\source\DataModelV2\DataModelInstance.cpp"
+					RelativePath=".\src\source\DataModelV2\DataModel.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -397,7 +397,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath=".\src\source\DataModelV2\GroupInstance.cpp"
+					RelativePath=".\src\source\DataModelV2\Group.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -441,7 +441,7 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath=".\src\source\DataModelV2\LevelInstance.cpp"
+					RelativePath=".\src\source\DataModelV2\Level.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -463,11 +463,11 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath=".\src\source\DataModelV2\LightingInstance.cpp"
+					RelativePath=".\src\source\DataModelV2\Lighting.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\DataModelV2\PartInstance.cpp"
+					RelativePath=".\src\source\DataModelV2\Part.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -515,7 +515,7 @@
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\DataModelV2\SoundInstance.cpp"
+					RelativePath=".\src\source\DataModelV2\Sound.cpp"
 					>
 				</File>
 				<File
@@ -523,11 +523,11 @@
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\DataModelV2\ThumbnailGeneratorInstance.cpp"
+					RelativePath=".\src\source\DataModelV2\ThumbnailGenerator.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\DataModelV2\WorkspaceInstance.cpp"
+					RelativePath=".\src\source\DataModelV2\Workspace.cpp"
 					>
 					<FileConfiguration
 						Name="Release|Win32"
@@ -709,7 +709,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\ax.h"
+				RelativePath=".\src\include\AX.h"
 				>
 			</File>
 			<File
@@ -749,7 +749,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\propertyGrid.h"
+				RelativePath=".\src\include\PropertyGrid.h"
 				>
 			</File>
 			<File
@@ -761,7 +761,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\resource.h"
+				RelativePath=".\src\include\Resource.h"
 				>
 			</File>
 			<File
@@ -777,7 +777,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\versioning.h"
+				RelativePath=".\src\include\Versioning.h"
 				>
 			</File>
 			<File
@@ -785,7 +785,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\win32Defines.h"
+				RelativePath=".\src\include\Win32Defines.h"
 				>
 			</File>
 			<File
@@ -876,11 +876,11 @@
 				Name="DataModelV2"
 				>
 				<File
-					RelativePath=".\src\include\DataModelV2\DataModelInstance.h"
+					RelativePath=".\src\include\DataModelV2\DataModel.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\DataModelV2\GroupInstance.h"
+					RelativePath=".\src\include\DataModelV2\Group.h"
 					>
 				</File>
 				<File
@@ -888,15 +888,15 @@
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\DataModelV2\LevelInstance.h"
+					RelativePath=".\src\include\DataModelV2\Level.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\DataModelV2\LightingInstance.h"
+					RelativePath=".\src\include\DataModelV2\Lighting.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\DataModelV2\PartInstance.h"
+					RelativePath=".\src\include\DataModelV2\Part.h"
 					>
 				</File>
 				<File
@@ -908,7 +908,7 @@
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\DataModelV2\SoundInstance.h"
+					RelativePath=".\src\include\DataModelV2\Sound.h"
 					>
 				</File>
 				<File
@@ -916,11 +916,11 @@
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\DataModelV2\ThumbnailGeneratorInstance.h"
+					RelativePath=".\src\include\DataModelV2\ThumbnailGenerator.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\DataModelV2\WorkspaceInstance.h"
+					RelativePath=".\src\include\DataModelV2\Workspace.h"
 					>
 				</File>
 				<Filter

@@ -1,15 +1,15 @@
 #pragma once
 
 // Instances
-#include "WorkspaceInstance.h"
-#include "LevelInstance.h"
-#include "PartInstance.h"
+#include "Workspace.h"
+#include "Level.h"
+#include "Part.h"
 #include "SelectionService.h"
 #include "GuiRootInstance.h"
-#include "ThumbnailGeneratorInstance.h"
+#include "ThumbnailGenerator.h"
 #include "XplicitNgine/XplicitNgine.h"
 #include "SoundService.h"
-#include "LightingInstance.h"
+#include "Lighting.h"
 
 // Libraries 
 #include "rapidxml/rapidxml.hpp"

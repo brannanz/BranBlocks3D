@@ -1,5 +1,5 @@
 #pragma once
-#include "DataModelV2/DataModelInstance.h"
+#include "DataModelV2/DataModel.h"
 #include "XplicitNgine/XplicitNgine.h"
 
 class Application;

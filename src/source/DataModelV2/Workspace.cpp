@@ -1,4 +1,4 @@
-#include "DataModelV2/WorkspaceInstance.h"
+#include "DataModelV2/Workspace.h"
 #include "Globals.h"
 #include "Application.h"
 

@@ -1,4 +1,4 @@
-#include "DataModelV2/ThumbnailGeneratorInstance.h"
+#include "DataModelV2/ThumbnailGenerator.h"
 #include "Application.h"
 #include "Globals.h"
 #include "base64.h"

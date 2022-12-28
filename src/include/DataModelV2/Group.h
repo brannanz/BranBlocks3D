@@ -1,5 +1,5 @@
 #pragma once
-#include "PartInstance.h"
+#include "Part.h"
 
 class GroupInstance :
 	public PVInstance

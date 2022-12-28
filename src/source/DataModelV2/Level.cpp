@@ -1,5 +1,5 @@
-#include "DataModelV2/DataModelInstance.h"
-#include "DataModelV2/LevelInstance.h"
+#include "DataModelV2/DataModel.h"
+#include "DataModelV2/Level.h"
 
 LevelInstance::LevelInstance(void)
 {

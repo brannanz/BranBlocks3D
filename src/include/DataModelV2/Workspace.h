@@ -1,6 +1,6 @@
 #pragma once
-#include "GroupInstance.h"
-#include "PartInstance.h"
+#include "Group.h"
+#include "Part.h"
 
 class WorkspaceInstance :
 	public GroupInstance

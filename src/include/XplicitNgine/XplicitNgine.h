@@ -1,7 +1,7 @@
 #pragma once
 #include <ode/ode.h>
 #include "DatamodelV2/Instance.h"
-#include "DatamodelV2/PartInstance.h"
+#include "DatamodelV2/Part.h"
 
 class XplicitNgine : public Instance
 {

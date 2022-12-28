@@ -1,4 +1,4 @@
-#include "DataModelV2/PartInstance.h"
+#include "DataModelV2/Part.h"
 #include "Globals.h"
 #include "Renderer.h"
 #include <sstream>

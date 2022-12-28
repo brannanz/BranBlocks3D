@@ -1,4 +1,4 @@
-#include "DataModelV2/LightingInstance.h"
+#include "DataModelV2/Lighting.h"
 #include "Application.h"
 #include "Globals.h"
 #include "StringFunctions.h"

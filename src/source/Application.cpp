@@ -3,10 +3,10 @@
 #include <iomanip>
 #include "resource.h"
 #include "DataModelV2/Instance.h"
-#include "DataModelV2/PartInstance.h"
+#include "DataModelV2/Part.h"
 #include "DataModelV2/TextButtonInstance.h"
 #include "DataModelV2/ImageButtonInstance.h"
-#include "DataModelV2/DataModelInstance.h"
+#include "DataModelV2/DataModel.h"
 #include "DataModelV2/GuiRootInstance.h"
 #include "XplicitNgine/XplicitNgine.h"
 #include "CameraController.h"

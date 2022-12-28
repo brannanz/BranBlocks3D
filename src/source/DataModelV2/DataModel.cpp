@@ -3,9 +3,9 @@
 // Instances
 #include "DataModelV2/GuiRootInstance.h"
 #include "DataModelV2/ToggleImageButtonInstance.h"
-#include "DataModelV2/DataModelInstance.h"
-#include "DataModelV2/ThumbnailGeneratorInstance.h"
-#include "DataModelV2/LightingInstance.h"
+#include "DataModelV2/DataModel.h"
+#include "DataModelV2/ThumbnailGenerator.h"
+#include "DataModelV2/Lighting.h"
 
 #include <fstream>
 #include <iostream>

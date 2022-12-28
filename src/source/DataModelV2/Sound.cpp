@@ -1,4 +1,4 @@
-#include "DataModelV2/SoundInstance.h"
+#include "DataModelV2/Sound.h"
 #include "Globals.h"
 
 SoundInstance::SoundInstance()

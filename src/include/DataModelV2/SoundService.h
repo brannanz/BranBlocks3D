@@ -1,6 +1,6 @@
 #pragma once
 #include "Instance.h"
-#include "SoundInstance.h"
+#include "Sound.h"
 
 class SoundService :
 	public Instance
