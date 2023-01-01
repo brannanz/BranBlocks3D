@@ -54,7 +54,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories=".\src\include;.\ThirdParty\G3D;.\ThirdParty\ODE;.\ThirdParty\SDL;.\App\include"
+				AdditionalIncludeDirectories=".\src\include;.\Rendering\g3d\include;.\Library\ODE\include;Z:\Library\SDL2\include;.\App\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -83,7 +83,7 @@
 				OutputFile="./Blocks3D.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Libs\G3D;.\Libs\ODE;.\Libs\SDL\x86"
+				AdditionalLibraryDirectories=".\Rendering\g3d\lib;.\Library\ODE\lib;Z:\Library\SDL2\lib"
 				ProgramDatabaseFile=".\Release/Blocks3D.pdb"
 				SubSystem="2"
 				StackReserveSize="16777216"
@@ -268,10 +268,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\ErrorFunctions.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\src\source\Globals.cpp"
 				>
 			</File>
@@ -397,6 +393,10 @@
 				<Filter
 					Name="Util"
 					>
+					<File
+						RelativePath=".\App\util\ErrorFunctions.cpp"
+						>
+					</File>
 					<File
 						RelativePath=".\App\util\Sound.cpp"
 						>
@@ -682,6 +682,10 @@
 				<Filter
 					Name="Util"
 					>
+					<File
+						RelativePath=".\App\include\util\ErrorFunctions.h"
+						>
+					</File>
 					<File
 						RelativePath=".\App\include\util\Sound.h"
 						>

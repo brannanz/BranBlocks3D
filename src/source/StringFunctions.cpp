@@ -1,6 +1,6 @@
 #include <G3DAll.h>
 #include <sstream>
-#include "ErrorFunctions.h"
+#include "Util/ErrorFunctions.h"
 #include "StringFunctions.h"
 
 std::string Convert (float number)

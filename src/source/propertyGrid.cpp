@@ -35,6 +35,9 @@
 #pragma warn(disable:2234)
 #endif
 
+// Silence annoying error
+#pragma warn(disable:4996)
+
 #ifndef _WIN32_WINNT // Necessary for WM_MOUSEWHEEL support
 #define _WIN32_WINNT 0x0400
 #endif

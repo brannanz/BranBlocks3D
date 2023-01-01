@@ -11,7 +11,7 @@
 #include <iostream>
 #include <sstream>
 #include <commdlg.h>
-#include "ErrorFunctions.h"
+#include "Util/ErrorFunctions.h"
 #include "Globals.h"
 #include "Application.h"
 
