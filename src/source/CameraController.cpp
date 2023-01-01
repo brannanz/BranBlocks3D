@@ -1,7 +1,7 @@
 #include "CameraController.h"
 #include "win32Defines.h"
 #include <iostream>
-#include "DataModelV2/Part.h"
+#include "V2DataModel/Part.h"
 #include "Application.h"
 #include "AudioPlayer.h"
 

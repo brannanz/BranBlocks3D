@@ -1,7 +1,7 @@
 #pragma once
-#include "DataModelV2/Part.h"
+#include "V2DataModel/Part.h"
 #pragma once
-#include "DataModelV2/Workspace.h"
+#include "V2DataModel/Workspace.h"
 
 struct MousePoint{
 	Vector3 position;

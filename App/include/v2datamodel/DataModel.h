@@ -7,8 +7,8 @@
 #include "SelectionService.h"
 #include "GuiRootInstance.h"
 #include "ThumbnailGenerator.h"
-#include "XplicitNgine/XplicitNgine.h"
-#include "SoundService.h"
+#include "Util/XplicitNgine.h"
+#include "Util/SoundService.h"
 #include "Lighting.h"
 
 // Libraries 

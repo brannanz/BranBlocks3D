@@ -1,11 +1,11 @@
 #include <string>
 
 // Instances
-#include "DataModelV2/GuiRootInstance.h"
-#include "DataModelV2/ToggleImageButtonInstance.h"
-#include "DataModelV2/DataModel.h"
-#include "DataModelV2/ThumbnailGenerator.h"
-#include "DataModelV2/Lighting.h"
+#include "V2DataModel/GuiRootInstance.h"
+#include "V2DataModel/ToggleImageButtonInstance.h"
+#include "V2DataModel/DataModel.h"
+#include "V2DataModel/ThumbnailGenerator.h"
+#include "V2DataModel/Lighting.h"
 
 #include <fstream>
 #include <iostream>

@@ -1,5 +1,5 @@
-#include "DataModelV2/SelectionService.h"
-#include "DataModelV2/Part.h"
+#include "V2DataModel/SelectionService.h"
+#include "V2DataModel/Part.h"
 
 //This is absolutely disgusting, and will not last long
 #include "Application.h"

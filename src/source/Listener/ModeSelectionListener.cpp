@@ -1,5 +1,5 @@
 #include "Globals.h"
-#include "DataModelV2/Instance.h"
+#include "V2DataModel/Instance.h"
 #include "Listener/ModeSelectionListener.h"
 #include "Application.h"
 #include "Tool/ArrowTool.h"

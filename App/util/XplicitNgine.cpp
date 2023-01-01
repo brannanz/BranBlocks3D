@@ -1,4 +1,4 @@
-#include "XplicitNgine/XplicitNgine.h"
+#include "Util/XplicitNgine.h"
 #include "Globals.h"
 
 XplicitNgine::XplicitNgine() 
@@ -51,7 +51,7 @@ void collisionCallback(void *data, dGeomID o1, dGeomID o2)
 			contact[i].surface.mode = dContactBounce | dContactSlip1 | dContactSlip2 | dContactSoftERP | dContactSoftCFM | dContactApprox1;
 
 			// Define contact surface properties
-			contact[i].surface.bounce = 0.7; //Elasticity
+			contact[i].surface.bounce = 0.7F; //Elasticity
 			contact[i].surface.mu = 0.2F; //Friction
 			contact[i].surface.slip1 = 0.0;
 			contact[i].surface.slip2 = 0.0;

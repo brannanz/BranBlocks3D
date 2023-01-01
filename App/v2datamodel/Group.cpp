@@ -1,4 +1,4 @@
-#include "DataModelV2/Group.h"
+#include "V2DataModel/Group.h"
 
 GroupInstance::GroupInstance(void)
 {

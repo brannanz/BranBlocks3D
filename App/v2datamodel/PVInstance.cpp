@@ -1,4 +1,4 @@
-#include "DataModelV2/PVInstance.h"
+#include "V2DataModel/PVInstance.h"
 
 PVInstance::PVInstance(void)
 {
