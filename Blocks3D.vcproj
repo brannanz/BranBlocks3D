@@ -54,7 +54,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories=".\src\include;.\Rendering\g3d\include;.\Library\ODE\include;Z:\Library\SDL2\include;.\App\include"
+				AdditionalIncludeDirectories=".\src\include;.\Rendering\g3d\include;.\Library\ODE\include;Z:\Library\SDL2\include;.\App\include;.\Client"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -248,10 +248,6 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath=".\src\source\Application.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\src\source\AudioPlayer.cpp"
 				>
 			</File>
@@ -269,18 +265,6 @@
 			</File>
 			<File
 				RelativePath=".\src\source\Globals.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\src\source\IEBrowser.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\src\source\IEDispatcher.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\src\source\main.cpp"
 				>
 			</File>
 			<File
@@ -312,22 +296,22 @@
 				>
 			</File>
 			<Filter
-				Name="Tool"
+				Name="Client"
 				>
 				<File
-					RelativePath=".\src\source\Tool\ArrowTool.cpp"
+					RelativePath=".\Client\Application.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Tool\DraggerTool.cpp"
+					RelativePath=".\Client\IEBrowser.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Tool\SurfaceTool.cpp"
+					RelativePath=".\Client\IEDispatcher.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Tool\Tool.cpp"
+					RelativePath=".\Client\main.cpp"
 					>
 				</File>
 			</Filter>
@@ -478,16 +462,32 @@
 						>
 					</File>
 				</Filter>
+				<Filter
+					Name="Tool"
+					>
+					<File
+						RelativePath=".\App\tool\ArrowTool.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\App\tool\DraggerTool.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\App\tool\SurfaceTool.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\App\tool\Tool.cpp"
+						>
+					</File>
+				</Filter>
 			</Filter>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl"
 			>
-			<File
-				RelativePath=".\src\include\Application.h"
-				>
-			</File>
 			<File
 				RelativePath=".\src\include\AudioPlayer.h"
 				>
@@ -518,14 +518,6 @@
 			</File>
 			<File
 				RelativePath=".\src\include\Globals.h"
-				>
-			</File>
-			<File
-				RelativePath=".\src\include\IEBrowser.h"
-				>
-			</File>
-			<File
-				RelativePath=".\src\include\IEDispatcher.h"
 				>
 			</File>
 			<File
@@ -637,22 +629,18 @@
 				</File>
 			</Filter>
 			<Filter
-				Name="Tool"
+				Name="Client"
 				>
 				<File
-					RelativePath=".\src\include\Tool\ArrowTool.h"
+					RelativePath=".\Client\Application.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Tool\DraggerTool.h"
+					RelativePath=".\Client\IEBrowser.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Tool\SurfaceTool.h"
-					>
-				</File>
-				<File
-					RelativePath=".\src\include\Tool\Tool.h"
+					RelativePath=".\Client\IEDispatcher.h"
 					>
 				</File>
 			</Filter>
@@ -764,6 +752,26 @@
 					</File>
 					<File
 						RelativePath=".\App\include\v2datamodel\Workspace.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Tool"
+					>
+					<File
+						RelativePath=".\App\include\tool\ArrowTool.h"
+						>
+					</File>
+					<File
+						RelativePath=".\App\include\tool\DraggerTool.h"
+						>
+					</File>
+					<File
+						RelativePath=".\App\include\tool\SurfaceTool.h"
+						>
+					</File>
+					<File
+						RelativePath=".\App\include\tool\Tool.h"
 						>
 					</File>
 				</Filter>
