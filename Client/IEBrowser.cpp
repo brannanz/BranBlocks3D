@@ -13,6 +13,13 @@
 #include "Enum.h"
 #include "ToolEnum.h"
 #include "VS2005CompatShim.h"
+#include "rapidxml/rapidxml.hpp"
+
+// To convert BSTR to char
+#include <comutil.h>
+#pragma comment(lib, "comsuppw.lib")
+
+using namespace rapidxml;
 
 HRESULT IEBrowser::doExternal(std::wstring funcName,
   DISPID dispIdMember,
@@ -26,7 +33,15 @@ HRESULT IEBrowser::doExternal(std::wstring funcName,
 {
 	if (funcName==L"Insert")
 	{
-		
+		xml_document<> doc;
+        
+        char *charStream = NULL;
+		charStream = _com_util::ConvertBSTRToString(pDispParams->rgvarg->bstrVal);
+
+		doc.parse<0>(charStream);
+		xml_node<> *mainNode = doc.first_node();
+		g_dataModel->scanXMLObject(mainNode);
+
 		MessageBoxW(NULL, pDispParams->rgvarg->bstrVal,L"Add insert here...",MB_OK);
 		return S_OK;
 	}

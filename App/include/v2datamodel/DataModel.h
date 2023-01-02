@@ -50,12 +50,12 @@ public:
 	void					toggleRun();
 	bool					isRunning();
 	void					resetEngine();
+	bool					scanXMLObject(rapidxml::xml_node<>* node);
 #if _DEBUG
 	void					modXMLLevel(float modY);
 #endif
 private:
 	bool isBrickCount;
-	bool					scanXMLObject(rapidxml::xml_node<>* node);
 	rapidxml::xml_node<>*	getNode(rapidxml::xml_node<> * node,const char* name );
 	float					getFloatValue(rapidxml::xml_node<> * node,const char* name);
 	bool					_successfulLoad;

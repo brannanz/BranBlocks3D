@@ -7,6 +7,7 @@
 #include <Mshtmhst.h>
 #include "IEDispatcher.h"
 #include "AudioPlayer.h"
+#include "rapidxml/rapidxml.hpp"
 
 class IEBrowser {
 	public:
