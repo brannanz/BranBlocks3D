@@ -4,7 +4,7 @@
 #include <sstream>
 #include <iomanip>
 #include "Faces.h"
-#include "AudioPlayer.h"
+#include "util/AudioPlayer.h"
 #include "StringFunctions.h"
 
 PartInstance::PartInstance(void)

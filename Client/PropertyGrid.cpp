@@ -35,17 +35,13 @@
 #pragma warn(disable:2234)
 #endif
 
-// Silence annoying error
-#pragma warn(disable:4996)
-
 #ifndef _WIN32_WINNT // Necessary for WM_MOUSEWHEEL support
 #define _WIN32_WINNT 0x0400
 #endif
 
 // MSVC++ Support
-#ifndef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
-#endif
+#define _CRT_SECURE_NO_DEPRECATE
 
 #define WIN32_LEAN_AND_MEAN
 

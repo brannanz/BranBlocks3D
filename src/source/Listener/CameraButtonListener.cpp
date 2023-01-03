@@ -1,6 +1,6 @@
 #include "Listener/CameraButtonListener.h"
 #include "Globals.h"
-#include "AudioPlayer.h"
+#include "util/AudioPlayer.h"
 #include "Application.h"
 
 void CameraButtonListener::onButton1MouseClick(BaseButtonInstance* button)

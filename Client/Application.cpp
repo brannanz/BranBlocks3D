@@ -10,7 +10,7 @@
 #include "V2DataModel/GuiRootInstance.h"
 #include "Util/XplicitNgine.h"
 #include "CameraController.h"
-#include "AudioPlayer.h"
+#include "Util/AudioPlayer.h"
 #include "Globals.h"
 #include "Application.h"
 #include "win32Defines.h"

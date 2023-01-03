@@ -248,10 +248,6 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath=".\src\source\AudioPlayer.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\src\source\AX.cpp"
 				>
 			</File>
@@ -272,10 +268,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\PropertyGrid.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\src\source\PropertyWindow.cpp"
 				>
 			</File>
@@ -285,10 +277,6 @@
 			</File>
 			<File
 				RelativePath=".\src\source\StringFunctions.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\src\source\TextureHandler.cpp"
 				>
 			</File>
 			<File
@@ -312,6 +300,10 @@
 				</File>
 				<File
 					RelativePath=".\Client\main.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Client\PropertyGrid.cpp"
 					>
 				</File>
 			</Filter>
@@ -378,6 +370,28 @@
 					Name="Util"
 					>
 					<File
+						RelativePath=".\App\util\AudioPlayer.cpp"
+						>
+						<FileConfiguration
+							Name="Release|Win32"
+							>
+							<Tool
+								Name="VCCLCompilerTool"
+								ObjectFile="$(IntDir)\$(InputName)1.obj"
+								XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+							/>
+						</FileConfiguration>
+						<FileConfiguration
+							Name="Debug|Win32"
+							>
+							<Tool
+								Name="VCCLCompilerTool"
+								ObjectFile="$(IntDir)\$(InputName)1.obj"
+								XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+							/>
+						</FileConfiguration>
+					</File>
+					<File
 						RelativePath=".\App\util\ErrorFunctions.cpp"
 						>
 					</File>
@@ -387,6 +401,10 @@
 					</File>
 					<File
 						RelativePath=".\App\util\SoundService.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\App\util\TextureHandler.cpp"
 						>
 					</File>
 					<File
@@ -525,10 +543,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\PropertyGrid.h"
-				>
-			</File>
-			<File
 				RelativePath=".\src\include\PropertyWindow.h"
 				>
 			</File>
@@ -542,10 +556,6 @@
 			</File>
 			<File
 				RelativePath=".\src\include\StringFunctions.h"
-				>
-			</File>
-			<File
-				RelativePath=".\src\include\TextureHandler.h"
 				>
 			</File>
 			<File
@@ -643,6 +653,10 @@
 					RelativePath=".\Client\IEDispatcher.h"
 					>
 				</File>
+				<File
+					RelativePath=".\Client\PropertyGrid.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="Properties"
@@ -671,6 +685,10 @@
 					Name="Util"
 					>
 					<File
+						RelativePath=".\App\include\util\AudioPlayer.h"
+						>
+					</File>
+					<File
 						RelativePath=".\App\include\util\ErrorFunctions.h"
 						>
 					</File>
@@ -680,6 +698,10 @@
 					</File>
 					<File
 						RelativePath=".\App\include\util\SoundService.h"
+						>
+					</File>
+					<File
+						RelativePath=".\App\include\util\TextureHandler.h"
 						>
 					</File>
 					<File

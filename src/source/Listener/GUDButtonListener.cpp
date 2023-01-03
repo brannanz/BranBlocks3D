@@ -1,7 +1,7 @@
 #include <G3DAll.h>
 #include "Application.h"
 #include "Globals.h"
-#include "AudioPlayer.h"
+#include "util/AudioPlayer.h"
 #include "V2DataModel/SelectionService.h"
 #include "Listener/GUDButtonListener.h"
 
