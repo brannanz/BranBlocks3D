@@ -74,7 +74,7 @@ class Application { // : public GApp {
 		HWND				_hwndToolbox;
 		HWND				_buttonTest;
 		HWND				_hwndRenderer;
-		DataModelInstance*	_dataModel;
+		DataModelManager*	_dataModel;
 		G3D::TextureRef		shadowMap;
 		std::string			_title;
 		bool				_dragging;

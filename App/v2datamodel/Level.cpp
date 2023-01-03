@@ -181,27 +181,27 @@ void LevelInstance::PropUpdate(LPPROPGRIDITEM &pItem)
 
 void LevelInstance::winCondition()
 {
-	DataModelInstance* DataModel = (DataModelInstance*)getParent(); //If level parent gets changed to something other than Datamodel it could cause nasty data corruption bugs
+	DataModelManager* DataModel = (DataModelManager*)getParent(); //If level parent gets changed to something other than Datamodel it could cause nasty data corruption bugs
 	DataModel->setMessage(winMessage);
 	DataModel->toggleRun();
 }
 
 void LevelInstance::loseCondition()
 {
-	DataModelInstance* DataModel = (DataModelInstance*)getParent();
+	DataModelManager* DataModel = (DataModelManager*)getParent();
 	DataModel->setMessage(loseMessage);
 	DataModel->toggleRun();
 }
 
 void LevelInstance::pauseCondition()
 {
-	DataModelInstance* DataModel = (DataModelInstance*)getParent();
+	DataModelManager* DataModel = (DataModelManager*)getParent();
 	DataModel->toggleRun();
 }
 
 void LevelInstance::drawCondition()
 {
-	DataModelInstance* DataModel = (DataModelInstance*)getParent();
+	DataModelManager* DataModel = (DataModelManager*)getParent();
 	DataModel->toggleRun();
 }
 

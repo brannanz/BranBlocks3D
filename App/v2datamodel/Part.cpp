@@ -119,7 +119,7 @@ void PartInstance::renderName(RenderDevice *rd)
 	Instance* dm = parent;
 	while(dm != NULL)
 	{
-		if(DataModelInstance* mod = dynamic_cast<DataModelInstance*>(dm))
+		if(DataModelManager* mod = dynamic_cast<DataModelManager*>(dm))
 		{
 			fnt = mod->font;
 			break;

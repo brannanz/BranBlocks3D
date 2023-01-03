@@ -192,7 +192,7 @@ void Application::onInit()  {
 	tool = new Tool();
     // Called before Application::run() beings
 	cameraController.setFrame(Vector3(0,2,10));
-	_dataModel = new DataModelInstance();
+	_dataModel = new DataModelManager();
 	_dataModel->setParent(NULL);
 	_dataModel->setName("undefined");
 	_dataModel->font = g_fntdominant;

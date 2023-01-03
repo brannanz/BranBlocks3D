@@ -13,7 +13,7 @@ BaseButtonInstance::BaseButtonInstance(void)
 
 void BaseButtonInstance::render(RenderDevice* rd)
 {
-	DataModelInstance* dataModel = g_dataModel;
+	DataModelManager* dataModel = g_dataModel;
 	Vector2 pos = Vector2(g_usableApp->mouse.x,g_usableApp->mouse.y);
 	drawObj(rd, pos, g_usableApp->mouse.isMouseDown());
 	Instance::render(rd);

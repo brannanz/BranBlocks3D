@@ -9,7 +9,7 @@ class Globals
 public:
     Globals(void);
     ~Globals(void);
-    static DataModelInstance* dataModel;
+    static DataModelManager* dataModel;
 	//static bool showMouse;
 	static POINT mousepoint;
 	static bool useMousePoint;
@@ -24,7 +24,7 @@ public:
 
 extern std::vector<Instance*> postRenderStack;
 extern bool running;
-extern DataModelInstance* g_dataModel;
+extern DataModelManager* g_dataModel;
 extern XplicitNgine* g_xplicitNgine;
 extern Application* g_usableApp;
 extern SkyRef g_sky;

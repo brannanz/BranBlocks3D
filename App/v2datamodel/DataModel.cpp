@@ -18,7 +18,7 @@
 using namespace std;
 using namespace rapidxml;
 
-DataModelInstance::DataModelInstance(void)
+DataModelManager::DataModelManager(void)
 {
 	// Instances
 	Instance::Instance();
@@ -49,7 +49,7 @@ DataModelInstance::DataModelInstance(void)
 	resetEngine();
 }
 
-void DataModelInstance::resetEngine()
+void DataModelManager::resetEngine()
 {
 	if(xplicitNgine != NULL)
 		delete xplicitNgine;
@@ -62,30 +62,30 @@ void DataModelInstance::resetEngine()
 	}
 }
 
-XplicitNgine * DataModelInstance::getEngine()
+XplicitNgine * DataModelManager::getEngine()
 {
 	return xplicitNgine;
 }
 
-void DataModelInstance::toggleRun()
+void DataModelManager::toggleRun()
 {
 	running = !running;
 	//if(!running)
 		//resetEngine();
 }
 
-bool DataModelInstance::isRunning()
+bool DataModelManager::isRunning()
 {
 	return running;
 }
 
-DataModelInstance::~DataModelInstance(void)
+DataModelManager::~DataModelManager(void)
 {
 	delete xplicitNgine;
 }
 
 #ifdef _DEBUG
-void DataModelInstance::modXMLLevel(float modY)
+void DataModelManager::modXMLLevel(float modY)
 {
 	_modY += modY;
 	clearLevel();
@@ -94,7 +94,7 @@ void DataModelInstance::modXMLLevel(float modY)
 }
 #endif
 
-void DataModelInstance::clearLevel()
+void DataModelManager::clearLevel()
 {
 	running = false;
 	Instance * goButton = this->getGuiRoot()->findFirstChild("go");
@@ -108,13 +108,13 @@ void DataModelInstance::clearLevel()
 	selectionService->addSelected(this);
 	workspace->clearChildren();
 }
-PartInstance* DataModelInstance::makePart()
+PartInstance* DataModelManager::makePart()
 {
 	PartInstance* part = new PartInstance();
 	return part;
 }
 
-rapidxml::xml_node<>* DataModelInstance::getNode(xml_node<> * node,const char* name)
+rapidxml::xml_node<>* DataModelManager::getNode(xml_node<> * node,const char* name)
 {
 	xml_node<> * tempNode = node->first_node(name);
 	if (!tempNode)
@@ -127,7 +127,7 @@ rapidxml::xml_node<>* DataModelInstance::getNode(xml_node<> * node,const char* n
 	}
 	return tempNode;
 }
-float DataModelInstance::getFloatValue(xml_node<> * node,const char* name)
+float DataModelManager::getFloatValue(xml_node<> * node,const char* name)
 {
 	xml_node<> * tempNode = node->first_node(name);
 	if (!tempNode)
@@ -299,7 +299,7 @@ Color3 bcToRGB(short bc)
 
 
 
-bool DataModelInstance::scanXMLObject(xml_node<> * scanNode)
+bool DataModelManager::scanXMLObject(xml_node<> * scanNode)
 {
 	xml_node<> * watchFirstNode = scanNode->first_node();
 
@@ -487,7 +487,7 @@ bool DataModelInstance::scanXMLObject(xml_node<> * scanNode)
 	return true;
 }
 
-bool DataModelInstance::load(const char* filename, bool clearObjects)
+bool DataModelManager::load(const char* filename, bool clearObjects)
 {
 	ifstream levelFile(filename,ios::binary);
 	if (levelFile)
@@ -515,7 +515,7 @@ bool DataModelInstance::load(const char* filename, bool clearObjects)
 	}
 }
 
-bool DataModelInstance::readXMLFileStream(std::ifstream* file)
+bool DataModelManager::readXMLFileStream(std::ifstream* file)
 {
 	file->seekg(0,file->end);
 	int length = file->tellg();
@@ -552,7 +552,7 @@ bool DataModelInstance::readXMLFileStream(std::ifstream* file)
 	return true;
 }
 
-bool DataModelInstance::debugGetOpen()
+bool DataModelManager::debugGetOpen()
 {
 	ifstream levelFile(_loadedFileName.c_str(),ios::binary);
 	if (levelFile)
@@ -562,7 +562,7 @@ bool DataModelInstance::debugGetOpen()
 	return true;
 }
 
-bool DataModelInstance::getOpen()
+bool DataModelManager::getOpen()
 {
 	_modY=0;
 	OPENFILENAME of;
@@ -584,27 +584,27 @@ bool DataModelInstance::getOpen()
 	}
 	return true;
 }
-void DataModelInstance::setMessage(std::string msg)
+void DataModelManager::setMessage(std::string msg)
 {
 	message = msg;
 	isBrickCount = false;
 	showMessage = true;
 }
 
-void DataModelInstance::clearMessage()
+void DataModelManager::clearMessage()
 {
 	showMessage = false;
 	isBrickCount = false;
 	message = "";
 }
 
-void DataModelInstance::setMessageBrickCount()
+void DataModelManager::setMessageBrickCount()
 {
 	isBrickCount = true;
 	showMessage = true;
 }
 
-void DataModelInstance::drawMessage(RenderDevice* rd)
+void DataModelManager::drawMessage(RenderDevice* rd)
 {
 	if(isBrickCount)
 	{
@@ -642,37 +642,37 @@ void DataModelInstance::drawMessage(RenderDevice* rd)
 	}
 }
 
-WorkspaceInstance* DataModelInstance::getWorkspace()
+WorkspaceInstance* DataModelManager::getWorkspace()
 {
 	return workspace;
 }
 
-GuiRootInstance* DataModelInstance::getGuiRoot()
+GuiRootInstance* DataModelManager::getGuiRoot()
 {
 	return guiRoot;
 }
 
-SelectionService* DataModelInstance::getSelectionService()
+SelectionService* DataModelManager::getSelectionService()
 {
 	return selectionService;
 }
 
-LevelInstance* DataModelInstance::getLevel()
+LevelInstance* DataModelManager::getLevel()
 {
 	return level;
 }
 
-ThumbnailGeneratorInstance* DataModelInstance::getThumbnailGenerator()
+ThumbnailGeneratorInstance* DataModelManager::getThumbnailGenerator()
 {
 	return thumbnailGenerator;
 }
 
-SoundService* DataModelInstance::getSoundService()
+SoundService* DataModelManager::getSoundService()
 {
 	return soundService;
 }
 
-LightingInstance* DataModelInstance::getLighting()
+LightingInstance* DataModelManager::getLighting()
 {
 	return lightingInstance;
 }

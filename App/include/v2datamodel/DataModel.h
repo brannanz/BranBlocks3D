@@ -16,12 +16,12 @@
 
 class GuiRootInstance;
 
-class DataModelInstance :
+class DataModelManager :
 	public Instance
 {
 public:
-	DataModelInstance(void);
-	~DataModelInstance(void);
+	DataModelManager(void);
+	~DataModelManager(void);
 	void					setMessage(std::string);
 	void					setMessageBrickCount();
 	void					clearMessage();
