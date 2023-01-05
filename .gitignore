@@ -60,3 +60,12 @@ desktop.ini
 UpgradeLog.htm
 click_output.JPEG
 click_output.PNG
+
+#G3D
+Rendering/g3d/obj/*
+Rendering/g3d/bin/*
+Rendering/temp/*
+
+#zlib
+Rendering/g3d/zlib/obj/*
+Rendering/g3d/zlib/bin/*

@@ -83,7 +83,7 @@
 				OutputFile="./Blocks3D.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Rendering\g3d\lib;.\Library\ODE\lib;Z:\Library\SDL2\lib"
+				AdditionalLibraryDirectories=".\Rendering\g3d\bin\glg3d\Release;.\Rendering\g3d\bin\graphics3D\Release;Z:\Rendering\g3d\zlib\bin\zlib\Release;.\Library\ODE\lib;Z:\Library\SDL2\lib"
 				ProgramDatabaseFile=".\Release/Blocks3D.pdb"
 				SubSystem="2"
 				StackReserveSize="16777216"
