@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "V2DataModel/DataModel.h"
 #include "V2DataModel/Level.h"
 

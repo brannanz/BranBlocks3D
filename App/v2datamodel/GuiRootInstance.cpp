@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include <iomanip>
 #include <sstream>
 #include "G3DAll.h"

@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "V2DataModel/SelectionService.h"
 #include "V2DataModel/Part.h"
 

@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "V2DataModel/Workspace.h"
 #include "Globals.h"
 #include "Application.h"

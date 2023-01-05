@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "util/AudioPlayer.h"
 #include "SDL.h"
 #include "SDL_audio.h"

@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "Tool/ArrowTool.h"
 #include "Application.h"
 #include "V2DataModel/SelectionService.h"

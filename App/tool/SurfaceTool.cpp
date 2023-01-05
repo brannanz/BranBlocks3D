@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "Tool/SurfaceTool.h"
 #include "Application.h"
 SurfaceTool::SurfaceTool(int theSurface, int extraParam)

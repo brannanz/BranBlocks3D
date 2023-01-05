@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "V2DataModel/Group.h"
 
 GroupInstance::GroupInstance(void)

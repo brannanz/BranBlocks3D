@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "Tool/Tool.h"
 
 Tool::Tool(void)

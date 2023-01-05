@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "Util/SoundService.h"
 #include "StringFunctions.h"
 #include "Util/AudioPlayer.h"

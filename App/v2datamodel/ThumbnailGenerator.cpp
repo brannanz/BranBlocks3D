@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "V2DataModel/ThumbnailGenerator.h"
 #include "Application.h"
 #include "Globals.h"

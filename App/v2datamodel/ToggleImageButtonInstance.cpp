@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "V2DataModel/ToggleImageButtonInstance.h"
 
 ToggleImageButtonInstance::ToggleImageButtonInstance(G3D::TextureRef newImage,

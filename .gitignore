@@ -69,3 +69,7 @@ Rendering/temp/*
 #zlib
 Rendering/g3d/zlib/obj/*
 Rendering/g3d/zlib/bin/*
+
+#app
+App/bin/*
+app/obj/*

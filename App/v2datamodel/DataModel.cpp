@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include <string>
 
 // Instances

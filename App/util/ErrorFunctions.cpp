@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include <sstream>
 #include "Util/ErrorFunctions.h"
 #include "Globals.h"

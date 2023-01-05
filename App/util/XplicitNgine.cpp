@@ -1,3 +1,5 @@
+#include "util/stdafx.h"
+
 #include "Util/XplicitNgine.h"
 #include "Globals.h"
 

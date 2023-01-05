@@ -1,4 +1,7 @@
 #define WINVER	0x0400
+
+#include "util/stdafx.h"
+
 #include <G3DAll.h>
 #include "V2DataModel/Instance.h"
 
