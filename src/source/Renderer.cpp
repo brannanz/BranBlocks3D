@@ -2,7 +2,7 @@
 #include <G3DAll.h>
 #include "Faces.h"
 
-float _bevelSize = 0.07F;
+float _bevelSize = 0.05F;
 std::vector<Vector3> _debugUniqueVertices;
 std::vector<GLfloat> _vertices;
 std::vector<GLfloat> _normals;
@@ -179,6 +179,12 @@ void renderBlock(const Vector3& renderSize)
 					);
 
 		drawBevels(); 
+
+		GLfloat mat_specular[] = { 0.4, 0.4, 0.4, 0.4 };
+		GLfloat low_shininess[] = { 100.0 };
+
+		glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+		glMaterialfv(GL_FRONT, GL_SHININESS, low_shininess);
 
 		glVertexPointer(3, GL_FLOAT,6 * sizeof(GLfloat), &_vertices[0]);
 		glColorPointer(3, GL_FLOAT,6 * sizeof(GLfloat), &_vertices[3]);
