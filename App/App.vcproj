@@ -79,8 +79,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory=".\bin\Release"
-			IntermediateDirectory=".\obj\Release"
+			OutputDirectory=".\bin\$(ProjectName)\Release"
+			IntermediateDirectory=".\obj\$(ProjectName)\Release"
 			ConfigurationType="4"
 			CharacterSet="2"
 			WholeProgramOptimization="0"

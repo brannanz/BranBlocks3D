@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="Blocks3D"
+	Name="Client"
 	ProjectGUID="{6C4D6EEF-B1D1-456A-B850-92CAB17124BE}"
 	RootNamespace="Blocks3D"
 	>
@@ -16,8 +16,8 @@
 	<Configurations>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory=".\Release"
-			IntermediateDirectory=".\Release"
+			OutputDirectory=".\bin\$(ProjectName)\Release"
+			IntermediateDirectory=".\obj\$(ProjectName)\Release"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -54,7 +54,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories=".\src\include;.\Rendering\g3d\include;.\Library\ODE\include;.\Library\SDL2\include;.\App\include;.\Client"
+				AdditionalIncludeDirectories="..\src\include;..\Rendering\g3d\include;..\Library\ODE\include;..\Library\SDL2\include;..\App\include;..\Client"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -80,10 +80,10 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="Advapi32.lib Comctl32.lib Comdlg32.lib Shell32.lib ode.lib Ole32.lib"
-				OutputFile="./Blocks3D.exe"
+				OutputFile="../Blocks3D.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Rendering\g3d\bin\glg3d\Release;.\Rendering\g3d\bin\graphics3D\Release;.\Rendering\g3d\zlib\bin\zlib\Release;.\Library\ODE\lib;.\Library\SDL2\lib;.\App\bin\Release"
+				AdditionalLibraryDirectories="..\Rendering\g3d\bin\glg3d\Release;..\Rendering\g3d\bin\graphics3D\Release;..\Rendering\g3d\zlib\bin\zlib\Release;..\Library\ODE\lib;..\Library\SDL2\lib;..\App\bin\App\Release"
 				ProgramDatabaseFile=".\Release/Blocks3D.pdb"
 				SubSystem="2"
 				StackReserveSize="16777216"
@@ -248,62 +248,84 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath=".\src\source\AX.cpp"
+				RelativePath="..\src\source\ax.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\BrowserCallHandler.cpp"
+				RelativePath="..\src\source\base64.cpp"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						ObjectFile="$(IntDir)\$(InputName)1.obj"
+						XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						ObjectFile="$(IntDir)\$(InputName)1.obj"
+						XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\src\source\BrowserCallHandler.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\CameraController.cpp"
+				RelativePath="..\src\source\CameraController.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\Globals.cpp"
+				RelativePath="..\src\source\Globals.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\Mouse.cpp"
+				RelativePath="..\src\source\Mouse.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\PropertyWindow.cpp"
+				RelativePath="..\src\source\PropertyWindow.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\Renderer.cpp"
+				RelativePath="..\src\source\Renderer.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\StringFunctions.cpp"
+				RelativePath="..\src\source\StringFunctions.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\source\WindowFunctions.cpp"
+				RelativePath="..\src\source\WindowFunctions.cpp"
 				>
 			</File>
 			<Filter
 				Name="Client"
 				>
 				<File
-					RelativePath=".\Client\Application.cpp"
+					RelativePath=".\Application.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\Client\IEBrowser.cpp"
+					RelativePath=".\IEBrowser.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\Client\IEDispatcher.cpp"
+					RelativePath=".\IEDispatcher.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\Client\main.cpp"
+					RelativePath=".\main.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\Client\PropertyGrid.cpp"
+					RelativePath=".\PropertyGrid.cpp"
 					>
 				</File>
 			</Filter>
@@ -311,35 +333,35 @@
 				Name="Listener"
 				>
 				<File
-					RelativePath=".\src\source\Listener\ButtonListener.cpp"
+					RelativePath="..\src\source\Listener\ButtonListener.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Listener\CameraButtonListener.cpp"
+					RelativePath="..\src\source\Listener\CameraButtonListener.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Listener\DeleteListener.cpp"
+					RelativePath="..\src\source\Listener\DeleteListener.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Listener\GUDButtonListener.cpp"
+					RelativePath="..\src\source\Listener\GUDButtonListener.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Listener\MenuButtonListener.cpp"
+					RelativePath="..\src\source\Listener\MenuButtonListener.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Listener\ModeSelectionListener.cpp"
+					RelativePath="..\src\source\Listener\ModeSelectionListener.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Listener\RotateButtonListener.cpp"
+					RelativePath="..\src\source\Listener\RotateButtonListener.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Listener\ToolbarListener.cpp"
+					RelativePath="..\src\source\Listener\ToolbarListener.cpp"
 					>
 				</File>
 			</Filter>
@@ -347,19 +369,11 @@
 				Name="Properties"
 				>
 				<File
-					RelativePath=".\src\source\Properties\BoolProperty.cpp"
+					RelativePath="..\src\source\Properties\BoolProperty.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\source\Properties\Property.cpp"
-					>
-				</File>
-			</Filter>
-			<Filter
-				Name="Helpers"
-				>
-				<File
-					RelativePath=".\src\source\base64.cpp"
+					RelativePath="..\src\source\Properties\Property.cpp"
 					>
 				</File>
 			</Filter>
@@ -369,94 +383,90 @@
 			Filter="h;hpp;hxx;hm;inl"
 			>
 			<File
-				RelativePath=".\src\include\AudioPlayer.h"
+				RelativePath="..\src\include\ax.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\AX.h"
+				RelativePath="..\src\include\base64.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\BrowserCallHandler.h"
+				RelativePath="..\src\include\BrowserCallHandler.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\CameraController.h"
+				RelativePath="..\src\include\CameraController.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\Enum.h"
+				RelativePath="..\src\include\Enum.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\ErrorFunctions.h"
+				RelativePath="..\src\include\Faces.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\Faces.h"
+				RelativePath="..\src\include\Globals.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\Globals.h"
+				RelativePath="..\src\include\Mouse.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\Mouse.h"
+				RelativePath="..\src\include\PropertyWindow.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\PropertyWindow.h"
+				RelativePath="..\src\include\Renderer.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\Renderer.h"
+				RelativePath="..\src\include\resource.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\Resource.h"
+				RelativePath="..\src\include\StringFunctions.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\StringFunctions.h"
+				RelativePath="..\src\include\ToolEnum.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\ToolEnum.h"
+				RelativePath="..\src\include\versioning.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\Versioning.h"
+				RelativePath="..\src\include\VS2005CompatShim.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\VS2005CompatShim.h"
+				RelativePath="..\src\include\win32Defines.h"
 				>
 			</File>
 			<File
-				RelativePath=".\src\include\Win32Defines.h"
-				>
-			</File>
-			<File
-				RelativePath=".\src\include\WindowFunctions.h"
+				RelativePath="..\src\include\WindowFunctions.h"
 				>
 			</File>
 			<Filter
 				Name="RapidXML"
 				>
 				<File
-					RelativePath=".\src\include\rapidxml\rapidxml.hpp"
+					RelativePath="..\src\include\rapidxml\rapidxml.hpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\rapidxml\rapidxml_iterators.hpp"
+					RelativePath="..\src\include\rapidxml\rapidxml_iterators.hpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\rapidxml\rapidxml_print.hpp"
+					RelativePath="..\src\include\rapidxml\rapidxml_print.hpp"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\rapidxml\rapidxml_utils.hpp"
+					RelativePath="..\src\include\rapidxml\rapidxml_utils.hpp"
 					>
 				</File>
 			</Filter>
@@ -464,39 +474,35 @@
 				Name="Listener"
 				>
 				<File
-					RelativePath=".\src\include\Listener\ButtonListener.h"
+					RelativePath="..\src\include\Listener\ButtonListener.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Listener\CameraButtonListener.h"
+					RelativePath="..\src\include\Listener\CameraButtonListener.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Listener\DeleteListener.h"
+					RelativePath="..\src\include\Listener\DeleteListener.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Listener\GUDButtonListener.h"
+					RelativePath="..\src\include\Listener\GUDButtonListener.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Listener\MenuButtonListener.h"
+					RelativePath="..\src\include\Listener\MenuButtonListener.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Listener\ModeSelectionListener.h"
+					RelativePath="..\src\include\Listener\ModeSelectionListener.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Listener\RotateButtonListener.h"
+					RelativePath="..\src\include\Listener\RotateButtonListener.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Listener\ToolbarListener.h"
-					>
-				</File>
-				<File
-					RelativePath=".\src\include\DataModel\WorkspaceInstance.h"
+					RelativePath="..\src\include\Listener\ToolbarListener.h"
 					>
 				</File>
 			</Filter>
@@ -504,19 +510,19 @@
 				Name="Client"
 				>
 				<File
-					RelativePath=".\Client\Application.h"
+					RelativePath=".\Application.h"
 					>
 				</File>
 				<File
-					RelativePath=".\Client\IEBrowser.h"
+					RelativePath=".\IEBrowser.h"
 					>
 				</File>
 				<File
-					RelativePath=".\Client\IEDispatcher.h"
+					RelativePath=".\IEDispatcher.h"
 					>
 				</File>
 				<File
-					RelativePath=".\Client\PropertyGrid.h"
+					RelativePath=".\PropertyGrid.h"
 					>
 				</File>
 			</Filter>
@@ -524,19 +530,11 @@
 				Name="Properties"
 				>
 				<File
-					RelativePath=".\src\include\Properties\BoolProperty.h"
+					RelativePath="..\src\include\Properties\BoolProperty.h"
 					>
 				</File>
 				<File
-					RelativePath=".\src\include\Properties\Property.h"
-					>
-				</File>
-			</Filter>
-			<Filter
-				Name="Helpers"
-				>
-				<File
-					RelativePath=".\src\include\base64.h"
+					RelativePath="..\src\include\Properties\Property.h"
 					>
 				</File>
 			</Filter>
@@ -546,15 +544,19 @@
 			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 			>
 			<File
-				RelativePath=".\Win32\Blocks3D.exe.manifest"
+				RelativePath="..\Win32\Blocks3D.exe.manifest"
 				>
 			</File>
 			<File
-				RelativePath=".\Win32\Dialogs.rc"
+				RelativePath="..\Win32\Dialogs.rc"
 				>
 			</File>
 			<File
-				RelativePath=".\Parts.bmp"
+				RelativePath="..\Win32\FatB3dIcon.ico"
+				>
+			</File>
+			<File
+				RelativePath="..\Parts.bmp"
 				>
 			</File>
 		</Filter>

@@ -73,3 +73,7 @@ Rendering/g3d/zlib/bin/*
 #app
 App/bin/*
 app/obj/*
+
+#client
+Client/bin/*
+Client/obj/*

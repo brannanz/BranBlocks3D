@@ -5,8 +5,8 @@
 #include <windows.h>
 #include <commctrl.h>
 #include <richedit.h>
-#include "src/include/resource.h"
-#include "src/include/versioning.h"
+#include "../src/include/resource.h"
+#include "../src/include/versioning.h"
 
 
 
@@ -15,7 +15,7 @@
 // Bitmap resources
 //
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
-IDB_BITMAP1        BITMAP         "Parts.bmp"
+IDB_BITMAP1        BITMAP         "../Parts.bmp"
 
 LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
 1 VERSIONINFO
