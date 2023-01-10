@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="Client"
+	Name="Dyna3D"
 	ProjectGUID="{6C4D6EEF-B1D1-456A-B850-92CAB17124BE}"
 	RootNamespace="Blocks3D"
 	>
@@ -54,7 +54,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..\src\include;..\Rendering\g3d\include;..\Library\ODE\include;..\Library\SDL2\include;..\App\include;..\Client"
+				AdditionalIncludeDirectories="..\src\include;..\Rendering\g3d\include;..\Library\ODE\include;..\Library\SDL2\include;..\App\include;..\Dyna3D"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				StringPooling="true"
 				RuntimeLibrary="2"

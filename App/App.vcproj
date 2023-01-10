@@ -102,7 +102,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories=".\include;..\Library\SDL2\include;..\Library\ODE\include;..\src\include;..\Rendering\g3d\include;..\Client"
+				AdditionalIncludeDirectories=".\include;..\Library\SDL2\include;..\Library\ODE\include;..\src\include;..\Rendering\g3d\include;..\Dyna3D"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB"
 				StringPooling="true"
 				RuntimeLibrary="2"

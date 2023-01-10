@@ -75,5 +75,5 @@ App/bin/*
 app/obj/*
 
 #client
-Client/bin/*
-Client/obj/*
+Dyna3D/bin/*
+Dyna3D/obj/*

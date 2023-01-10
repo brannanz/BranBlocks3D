@@ -38,4 +38,4 @@ extern std::string cameraSound;
 extern std::string clickSound;
 extern std::string dingSound;
 extern HWND mainHwnd;
-const std::string g_appName = "Blocks3D";
+const std::string g_appName = "Dyna3D";
