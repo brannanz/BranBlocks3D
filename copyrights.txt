@@ -1,0 +1,11 @@
+This program uses the Graphics3D Library ("G3D", http://g3d-cpp.sf.net)
+This software is based in part on the PNG Reference Library which is
+Copyright (c) 2004 Glenn Randers-Pehrson
+This software is based in part on the work of the Independent JPEG Group.
+This software uses the Simple DirectMedia Layer library ("SDL",
+http://www.libsdl.org), which is included under the terms of the
+GNU Lesser General Public License, (http://www.gnu.org/copyleft/lesser.html).
+
+This program uses the Graphics3D Library ("G3D", http://g3d-cpp.sf.net), which
+is licensed under the "BSD" Open Source license.  The Graphics3D library
+source code is Copyright © 2000-2006, Morgan McGuire, All rights reserved.
